@@ -1,16 +1,15 @@
-
 {
   "name": "NWR5 Genesis Badge",
-  "short_name": "NWR5 Badge",
-  "start_url": "./index.html",
+  "short_name": "NWR5Badge",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#facc15",
+  "theme_color": "#ffd700",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/noorelahmanifestofinal/nwr5-genesis-dapp/main/icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "golden_badge_icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ]
 }
