@@ -1,1 +1,35 @@
-<!-- placeholder -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NWR5 Genesis Badge</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>NWR5 Genesis Badge</h1>
+    <p>Claim your soulbound Genesis badge for early contributions to the NWR5 Harvest community.</p>
+
+    <div id="wallet-section">
+      <button id="connectWallet">🔌 Connect Wallet</button>
+      <p id="walletAddress"></p>
+    </div>
+
+    <div id="mint-section" style="display:none;">
+      <button id="mintBadge">🏅 Mint Genesis Badge</button>
+      <p id="mintStatus"></p>
+    </div>
+
+    <div id="leaderboard-section">
+      <h2>🏆 Top Contributors</h2>
+      <ul id="leaderboard"></ul>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+  <script src="dapp.js"></script>
+</body>
+</html>
