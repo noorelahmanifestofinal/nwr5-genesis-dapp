@@ -1,80 +1,15 @@
+
 [
   {
     "inputs": [
-      {
-        "internalType": "address",
-        "name": "_token",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_communityFund",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "constructor"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "title",
-        "type": "string"
-      },
-      {
-        "internalType": "uint16",
-        "name": "year",
-        "type": "uint16"
-      },
-      {
-        "internalType": "bool",
-        "name": "isHeart",
-        "type": "bool"
-      },
-      {
-        "internalType": "string",
-        "name": "businessName",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "location",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "uri",
-        "type": "string"
-      }
+      { "internalType": "string", "name": "title", "type": "string" },
+      { "internalType": "uint16", "name": "year", "type": "uint16" },
+      { "internalType": "bool", "name": "isHeart", "type": "bool" },
+      { "internalType": "string", "name": "businessName", "type": "string" },
+      { "internalType": "string", "name": "location", "type": "string" },
+      { "internalType": "string", "name": "uri", "type": "string" }
     ],
     "name": "mintBadge",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "amount",
-        "type": "uint256"
-      }
-    ],
-    "name": "contribute",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint8",
-        "name": "newPhase",
-        "type": "uint8"
-      }
-    ],
-    "name": "setPhase",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

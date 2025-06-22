@@ -1,12 +1,15 @@
 
-self.addEventListener('install', event => {
-    event.waitUntil(caches.open('nwr5-cache').then(cache => {
-        return cache.addAll(['./', './index.html']);
-    }));
+self.addEventListener("install", function(e) {
+  e.waitUntil(
+    caches.open("nwr5-badge").then(function(cache) {
+      return cache.addAll(["/", "/index.html", "/style.css", "/dapp.js"]);
+    })
+  );
 });
-
-self.addEventListener('fetch', event => {
-    event.respondWith(caches.match(event.request).then(response => {
-        return response || fetch(event.request);
-    }));
+self.addEventListener("fetch", function(e) {
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
+  );
 });
